@@ -19,6 +19,9 @@ if($_GET['key'] == 'random_key') {
 ### Data Structure
 This API assumes that you are creating an array of data, but each element in the array does not need to have the same structure. You can also have a single element array if you simply want to have a single entry. You may use any keys you want and assign any values, but the key `id` is reserved and indicates the index of the element in the array. You may assign a different value to `id` but it will be ignored and instead changed to be the index of the element.
 
+### All Endpoints
+All endpoints will return the full JSON data from `shows.json` after the modifications are made as desired.
+
 ### Add Endpoint
 This endpoint appends an element to the array.
 
@@ -82,5 +85,15 @@ POST data example:
 ```
 This would cause the element with `"id":1` to be reset to `"id":0` since the element with `"id":0` was deleted.
 
+### Read Endpoint
+Just reads out the raw JSON data from the `shows.json` file.
+
+URL:
+```
+store.php?key=random_key&method=read
+```
+
+Any POST data will be ignored, but you can call this endpoint either via POST or GET, doesn't really matter in this case.
+
 ## More Information
-A post on my website will be soon to follow, explaining much of the same details as above but with an example video of the TV tracking app that I made with this strategy. 
+A post on my website will be soon to follow, explaining much of the same details as above but with an example video of the TV tracking app that I made with this strategy.
