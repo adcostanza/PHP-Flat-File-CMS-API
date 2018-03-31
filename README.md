@@ -96,4 +96,4 @@ store.php?key=random_key&method=read
 Any POST data will be ignored, but you can call this endpoint either via POST or GET, doesn't really matter in this case.
 
 ## More Information
-A post on my website will be soon to follow, explaining much of the same details as above but with an example video of the TV tracking app that I made with this strategy.
+[Read more on my website](http://acostanza.com/2018/03/31/incredibly-simple-flat-file-cms-strategy-static-websites/) and also see an example React App using this PHP API.
